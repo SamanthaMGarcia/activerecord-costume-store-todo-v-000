@@ -15,11 +15,18 @@ ActiveRecord::Schema.define(version: 3) do
   create_table "costume_stores", force: :cascade do |t|
     t.string "name"
     t.string "location"
+<<<<<<< HEAD
     t.integer "costume_inventory"
     t.integer "num_of_employees"
     t.boolean "still_in_business"
     t.datetime "opening_time"
     t.datetime "closing_time"
+=======
+    t.integer "employee_count"
+    t.boolean "in_business"
+    t.float "opening_time"
+    t.float "closing_time"
+>>>>>>> acddc95875d78db2faf0a0161816fef8c8d9ac42
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -29,19 +36,34 @@ ActiveRecord::Schema.define(version: 3) do
     t.string "size"
     t.string "image_url"
     t.float "price"
+<<<<<<< HEAD
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "haunted_houses", force: :cascade do |t|
+=======
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "haunted_house", force: :cascade do |t|
+>>>>>>> acddc95875d78db2faf0a0161816fef8c8d9ac42
     t.string "name"
     t.string "location"
     t.string "theme"
     t.float "price"
+<<<<<<< HEAD
     t.boolean "family_friendly"
     t.datetime "opening_date"
     t.datetime "closing_date"
     t.text "description"
+=======
+    t.boolean "family_friendly?"
+    t.datetime "opening_date"
+    t.datetime "closing_date"
+    t.text "long_description"
+>>>>>>> acddc95875d78db2faf0a0161816fef8c8d9ac42
     t.datetime "created_at"
     t.datetime "updated_at"
   end
